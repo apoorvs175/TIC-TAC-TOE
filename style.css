@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+ES+Deco:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+:root {
+    --background-color: #ceb7d3;
+    --head-color : #6202b6;
+    --button-background: #007BFF;
+    --box-hover: #0078f9;
+    --wining-color: rgb(255, 0, 0);
+}
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--background-color);
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    display: flex;
+    gap: 2em;
+    padding:1em;
+    margin-top: 2em;
+    margin-left: 2.5em;
+    color: var(--head-color);
+}
+
+.heading h1{
+    font-size: 4em;
+    font-weight: bolder;
+}
+#logo{
+    color: var(--head-color);
+    margin-top: 0.15em;
+    font-size: 4em;
+}
+
+.sub-container{
+    display: flex;
+    gap: 10em;
+    margin-left: 3em;
+    margin-top: 2em;
+}
+.description{
+    width: 45vw;
+    font-size: 1.05em;
+    text-align: justify;  
+}
+.description p{
+    padding: 0.2em;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3,130px);
+    grid-gap: 10px;
+    margin: 20px au;
+}
+
+.cell {
+    width: 130px;
+    height: 130px;
+    background-color: rgb(120, 61, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+.cell:hover{
+    background-color: rgb(140, 91, 196);
+}
+
+#restart {
+    margin-top: 20px;
+    margin-left: 1000px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(120, 61, 189);
+}
+
+#message { 
+    margin-left: 500px;
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: bolder;
+    color: var(--head-color);
+}
+
+footer{
+    font-family: "Playwrite MX", cursive;
+    font-optical-sizing: auto;
+    color: rgb(120, 61, 189);
+    font-size: 0.8em;
+    margin-left: 45%;
+
+
+}
